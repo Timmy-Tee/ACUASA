@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/png" sizes="72x72"  href="img/logo2.png">
+
+       <!-- IFont-Awesome icon -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-shims.min.css" 
+        />
+      
+       <!-- IFont-Awesome icon -->
+       
+    <title>Department</title>
+</head>
+<body>
+
+
+    <!-- <div class="main">
+        <img src="img/logo2.png" alt="">
+    </div> -->
+
+    <nav>
+        <div class="img">
+            <img src="img/logo.png" alt="">
+        </div>
+        <i id="bars" class="fa fa-bars" onclick="opennav()"></i>
+
+        <div class="nav_slide" id="nav_slide">
+        <ul>
+
+            <div class="multiply">
+                <i id="multiply" class="fa fa-multiply" onclick="closenav()"></i>
+            </div>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="faculty.html">Staff</a></li>
+            <li> <a href="excos.html">Excos</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li> <span></span> <a id="active" href="department.html">Department</a></li>
+
+        </ul>
+        </div>
+    </nav>
+
+<!-- banner -->
+
+
+<div id="faculty_banner">
+    <div id="banner_cover">
+
+        <!-- text -->
+    <div class="banner_text">
+        
+        <b id="">Important Links </b>
+
+    </div>
+        <!-- text -->
+
+    </div>
+</div>
+
+<!-- banner -->
+
+
+<!-- Cards -->
+
+    <div class="department_cards">
+        <div class="card_holder">
+
+            <a href="https://pay.acuoyo.net/" class="cards">
+                <i class="fa-regular fa-eye"></i>
+                <br><br>
+                <p>Course Form Payment</p>
+            </a>
+
+            <a href="http://acuypp.net/" class="cards">
+                <i class="fa-solid fa-school"></i>
+                <br><br>
+                <p>School Fees Payment</p>
+            </a>
+
+            <a href="" class="cards">
+                <i class="fa fa-book"></i>
+                <br><br>
+                <p>Student Portal</p>
+            </a>
+
+            <a href="" class="cards">
+                <i class="fa fa-file"></i>
+                <br><br>
+                <p>Past Question</p>
+            </a>
+
+        </div>
+    </div>
+
+<!-- Cards -->
+
+
+
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script>
+    
+
+    window.addEventListener("scroll",function(){
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 70);
+    })
+</script>
+</html>
