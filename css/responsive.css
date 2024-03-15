@@ -1,232 +1,210 @@
-@media(max-width: 970px){
-      /* About Us */
-      .about_us{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .card_holder{
-        flex-basis: 96%;
-    }
-    
-    /* About Us */
+@media (max-width: 1020px) {
+  .card_holder {
+    flex-basis: 80%;
+  }
 
-}
+  .card_holder {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+  }
 
+  .dot {
+    display: none;
+  }
+  #active {
+    background: #fff;
+  }
+  nav ul li span {
+    display: none;
+  }
 
+  .nav_slide {
+    /* background: red; */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* place-content: center; */
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    height: 100vh;
+    background: #5f4cf5;
+    animation: animate 0.8s 1;
+  }
 
+  @keyframes animate {
+    from {
+      left: -90%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  .nav_slide ul {
+    width: 100%;
+  }
+  .nav_slide ul li {
+    display: block;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    place-content: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.107);
+  }
+  .nav_slide ul li a {
+    /* padding: 30px; */
+    /* margin: 20px; */
+    /* border: 1px solid red; */
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+  }
+  .nav_slide ul li a:hover {
+    background: #fff;
+  }
+  #bars {
+    display: flex;
+  }
+  .multiply {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    /* background: red; */
+  }
+  #multiply {
+    display: flex;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+  }
 
-@media(max-width: 870px){
+  /* About */
+  .about_us {
+    padding: 20px;
+  }
+  .image_section #abt_img {
+    width: 450px;
+  }
 
-    .card_holder{
-        flex-basis: 80%;
-    }
-    
-    .card_holder{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 30px;
+  /* About */
 
-    }
-
-    .dot{
-        display: none;
-    }
-    #active{
-        background: #fff;
-    }
-    nav ul li span {
-        display: none;
-    }
-    
-    .nav_slide{
-        /* background: red; */
-        display: none;  
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /* place-content: center; */
-        align-items: center;
-        transition: 0.5s ease-in-out;
-        height: 100vh;
-        background: #5f4cf5;
-        animation: animate 0.8s 1 ;
-    }
-
-    @keyframes animate{
-        from{
-            left: -90%; 
-        }
-        to{
-            left: 0%;
-        }
-    }
-    .nav_slide ul{
-        width: 100%;
-    }
-    .nav_slide ul li{
-        display: block;
-        width: 100%;
-        display: flex;
-        /* flex-direction: column; */
-        place-content: center;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.107);
-    }
-    .nav_slide ul li a{
-        /* padding: 30px; */
-        /* margin: 20px; */
-        /* border: 1px solid red; */
-        color: #fff;
-        width: 100%;
-        padding: 20px;
-    }
-    .nav_slide ul li a:hover{
-        background: #fff;
-    }
-    #bars{
-        display: flex;
-    }
-    .multiply{
-        /* border: 1px solid; */
-        display: flex;
-        justify-content: flex-end;
-        padding: 10px;
-        /* background: red; */
-    }
-    #multiply{
-        display: flex;
-        right: 30px;
-        font-size: 40px;
-        color: #fff;
-        position: relative;
-    }
-
-
-
-    /* BTN */
-    .btn_holder{
-        width: 80%;
-    }
-    /* BTN */
-
-
+  /* BTN */
+  .btn_holder {
+    width: 80%;
+  }
+  /* BTN */
 
   /* Skills*/
-  .skills{
+  .skills {
     display: flex;
-      grid-template-columns: repeat(1,1fr);
-      flex-direction: column-reverse;
-}
-/* Skills */
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column-reverse;
+  }
+  /* Skills */
 
-
-/* Faculty */
-.lecturer_image_holder, .multiple_section, .last_section{
+  /* Faculty */
+  .lecturer_image_holder,
+  .multiple_section,
+  .last_section {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.lecturer_title p{
+  .lecturer_title p {
     font-size: 30px;
-}
+  }
 
-/*  */
-.sec:nth-child(1){
- flex-direction: column;
-}
-.sec:nth-child(2){
- flex-direction: column-reverse;
-}
-}
+  /*  */
 
+  .about_us {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card_holder {
+    flex-basis: 96%;
+  }
 
+  .project_holders {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+  }
+  .project_holders .image-box:nth-child(7n + 1) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 
+  .image_section #abt_img {
+    width: 350px;
+  }
 
-@media(max-width: 750px){
+  #project_btn {
+    place-content: center;
+    width: 100%;
+  }
+  #project_btn a {
+    padding: 13px 75px;
+  }
 
-    .banner_cover .banner_text{
-        padding: 10px;
-    }
-    .banner_cover{
-        padding: 20px;
-    }
-    
-    
-    .project_displays{
-        padding: 10px;
-    }
-
-    .project_holders{
-        /* width: 90%; */
-        grid-template-columns: repeat(2,1fr);
-
-    }
-
-    .image_section #abt_img{
-        width: 350px;
-    }
-    
-        /* Faculty */
-.lecturer_image_holder, .multiple_section, .last_section{
+  /* .sec */
+  .sec:nth-child(1) {
+    flex-direction: column;
+    /* background: green; */
+  }
+  .sec:nth-child(2) {
+    flex-direction: column-reverse;
+    /* background: red; */
+  }
+  .sec .project_holders {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
- }
+  }
 
- .lecturer_title p{
+  /* Gallery */
+  .project_holders {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+  }
+  .project_holders .imgs:nth-child(7n + 1) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  /* Gallery */
+}
+
+@media (max-width: 870px) {
+  /* Faculty */
+  .lecturer_image_holder,
+  .multiple_section,
+  .last_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lecturer_title p {
     font-size: 25px;
+  }
+  .banner_text {
+    margin-left: 10px;
+    padding: 10px;
+    /* border: 1px solid; */
+  }
+  .banner_text > b {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .image_section #abt_img {
+    width: 350px;
+  }
+
 }
 
 
-
-
-
-
-}
-
-
-
-@media(max-width: 620px){
-    .project_title_holder{
-        padding: 30px;
-    }    
-    
-    .line{
-        width: 90%;
-    }
-
-    .project_holders{
-        /* width: 90%; */
-        grid-template-columns: repeat(1,1fr);
-
-    }
-
-
-    .department_cards{
-        padding: 20px;
-    }
-    
-
-
-    #faculty_banner{
-        height: 60vh;
-    }
-    #banner_cover{
-        height: 60vh;
-    }
-    
-
-    .card_holder{
-        flex-basis: 90%;
-        border: 1px solid
-    }
-    
-    .card_holder{
-        padding: 10px;
-    }
-
-
-    .banner_cover .banner_text{
-        padding: 20px;
-        margin: 0px;
-    }
-    
+@media (max-width: 450px){
+  .banner_text > b {
+    font-size: 35px;
+  }
 }
