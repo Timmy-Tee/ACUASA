@@ -312,6 +312,68 @@ nav.sticky {
 /************************** Skills ***************************/
 
 /************************** Image Gallery ***************************/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fafafaf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.imgs:hover .overlay {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  opacity: 1;
+}
+.imgs .detail {
+  text-align: center;
+}
+.imgs .detail .title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  top: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.imgs .detail .category {
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  bottom: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s esae;
+}
+.imgs:hover .detail .title {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+.imgs:hover .detail .category {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+.imgs .detail .title a,
+.imgs .detail .category a {
+  color: #222222;
+  text-decoration: none;
+}
+
 .project {
   background: var(--main-bg);
   padding: 20px;
@@ -511,9 +573,9 @@ nav.sticky {
 }
 .lecturer_title {
   display: flex;
-  /* place-content: center; */
+  place-content: center;
   margin-bottom: 10px;
-  /* align-items: center; */
+  align-items: center;
 }
 .lecturer_title p {
   font-size: 35px;
@@ -521,7 +583,7 @@ nav.sticky {
   flex-basis: 100%;
 }
 .lecturers span {
-  width: 10%;
+  width: 30%;
   height: 3px;
   border-radius: 50px;
   margin: 2px;
