@@ -89,7 +89,9 @@
   .image_section #abt_img {
     width: 450px;
   }
-
+  .project_info {
+    padding: 10px;
+  }
   /* About */
 
   /* BTN */
@@ -183,7 +185,8 @@
   }
 
   .lecturer_title p {
-    font-size: 25px;
+    font-size: 24px;
+    width: 100%;
   }
   .banner_text {
     margin-left: 10px;
@@ -193,12 +196,20 @@
   .banner_text > b {
     font-size: 50px;
   }
+  .line{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 650px) {
   .image_section #abt_img {
     width: 350px;
+  } 
+  .department_cards {
+    padding: 20px;
   }
+
 
 }
 

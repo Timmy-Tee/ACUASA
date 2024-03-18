@@ -355,7 +355,6 @@ nav.sticky {
 
 .project_displays {
   align-items: center;
-  border: 1px solid;
 }
 .project_holders {
   max-width: 1050px;
@@ -512,13 +511,14 @@ nav.sticky {
 }
 .lecturer_title {
   display: flex;
-  place-content: center;
+  /* place-content: center; */
   margin-bottom: 10px;
-  align-items: center;
+  /* align-items: center; */
 }
 .lecturer_title p {
   font-size: 35px;
   font-weight: lighter;
+  flex-basis: 100%;
 }
 .lecturers span {
   width: 10%;
@@ -630,7 +630,6 @@ nav.sticky {
 
 /* Cards */
 .department_cards {
-  border: 1px solid;
   padding: 50px;
   display: flex;
   place-content: center;
