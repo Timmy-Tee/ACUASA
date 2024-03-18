@@ -26,6 +26,30 @@ body {
   background: var(--background);
 }
 
+.loader {
+  width: 100%;
+  height: 100vh;
+  background: var(--main-bg);
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  place-content: center;
+}
+.loader>img {
+  width: 260px;
+  animation: increase 1.5s linear infinite;
+}
+@keyframes increase {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 /* Nav */
 nav {
   display: flex;
