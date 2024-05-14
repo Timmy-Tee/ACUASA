@@ -1,0 +1,166 @@
+<!../DOCTYPE ../html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" type="image/png" sizes="72x72" href="img/logo2.png" />
+
+    <!-- IFont-Awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-shims.min.css"
+    />
+    <!-- IFont-Awesome icon -->
+
+    <title>Project 1</title>
+  </head>
+  <body>
+    <!-- <div class="main">
+        <img src="img/logo2.png" alt="">
+    </div> -->
+
+    <nav>
+      <div class="img">
+        <img src="../img/logo.png" alt="" />
+      </div>
+      <i id="bars" class="fa fa-bars" onclick="opennav()"></i>
+
+      <div class="nav_slide" id="nav_slide">
+        <ul>
+          <div class="multiply">
+            <i id="multiply" class="fa fa-multiply" onclick="closenav()"></i>
+          </div>
+
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li>
+            <span></span><a id="active" href="../projects.html">Projects</a>
+          </li>
+          <li><a href="../faculty.html">Staff</a></li>
+          <li><a href="../excos.html">Excos</a></li>
+          <li><a href="../alumni.html">Alumni</a></li>
+          <li><a href="../department.html">Department</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- banner -->
+
+    <!-- Projects -->
+    <!-- <div class="project">
+      <div class="project_title_holder">
+        <div class="line">
+          <div id="link">
+            <a href="../../projects.html">Projects</a>
+           >
+            <a> Project 1</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Projects -->
+
+    <!-- Project Info -->
+    <div class="project_info">
+      <div class="sec">
+        <!-- Avatar -->
+        <div class="inner_image-holder">
+          <div class="image_holder">
+            <img src="../img/excos/Gen_Sec.jpg" alt="" />
+          </div>
+          <br />
+          <div class="inner_text_holder">
+            <b>Arona Peter</b>
+            <p>300 Level</p>
+            <div class="icons">
+              <a
+                target="_blank"
+                href="https://instagram.com/i_lles_t?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/oluwatoba-ojetoyinbo-827639237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i id="linkedin" class="fa fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Avatar -->
+
+        <!-- Text -->
+        <div class="text">
+
+          <b id="projectTitle">A Modern 3-Bedroom Apartment</b>
+     
+          <p>
+               A modern Simplistic 3-Bedroom Semidetached Duplex apartments. To be situated in the surreal environment  of  Jericho Ibadan.
+
+               <br>
+               Aspiring architect with a passion for clean lines, sustainable design, and functional simplicity. Focused on creating spaces that inspire and serve the community, while minimizing environmental impact. Always seeking innovative solutions and collaborative opportunities to bring ideas to life.
+          </p>
+        </div>
+        <!-- Text -->
+      </div>
+    </div>
+    <div class="project_holders">
+      <div class="imgs">
+        <img src="../img/indiv/1/4.jpg" alt="" />
+      </div>
+      <div class="imgs">
+        <img src="../img/indiv/1/5.jpg" alt="" />
+      </div>
+      <div class="imgs">
+        <img src="../img/indiv/1/6.jpg" alt="" />
+      </div>
+      <div class="imgs">
+        <img src="../img/indiv/1/7.jpg" alt="" />
+      </div>
+      <div class="imgs">
+        <img src="../img/indiv/1/8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Project Info -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_inner_div" id="blue">
+        <div class="footer_img">
+          <img src="../img/logo2.png" alt="" />
+
+          <br />
+          <div class="icons">
+               <a href="https://www.instagram.com/architecture_acu/"
+                 ><i class="fa fa-instagram"></i
+               ></a>
+               <!-- <a href=""><i class="fa-brands fa-tiktok"></i></a> -->
+             </div>
+          <br />
+
+          <p>
+            All Rights Reserved. <br />
+            © 2023 Ajayi Crowther University Architecture Students Association.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("nav");
+      header.classList.toggle("sticky", window.scrollY > 70);
+    });
+  </script>
+</html>
